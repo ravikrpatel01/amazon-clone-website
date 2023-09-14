@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="signuppage.css">
+    </head>
+    <body>
+        <div class="box-container">
+            <h2>Registration Form</h2>
+            <form action="">
+                <label for="firstname">First Name:</label><br>
+                <input type="text" id="firstname" required><br>
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" id="lastname" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" required placeholder="example@gmail.com"><br>
+                <label for="mobile">Mobile No:</label><br>
+                <input type="number" id="mobile" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" required> <br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others">Others</label><br><br>
+                <label for="country">Country:</label>
+                <select name="country" id="countries">
+                    <option value="select">Select</option>
+                    <option value="india">India</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="america">America</option>
+                    <option value="london">London</option>
+                    <option value="westindies">West Indies</option>
+                    <option value="others1">Others</option>
+                </select>
+                <br><br>
+                <button type="button">SUBMIT</button><br><br>
+                <p1>Already have an account?</p1>
+                <a href="loginpage.html" class="link" target="_blank">Login</a>
+
+                <p>RS-01: Made with Love💛</p>
+
+            </form>
+        </div>
+    </body>
+</html>

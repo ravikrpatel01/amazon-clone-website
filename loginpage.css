@@ -5,7 +5,7 @@
 }
 
 html,body{
-    background-image: url("/backgroundimage.jpg");
+    background-image: url("Web Images/backgroundimage.jpg");
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
 }

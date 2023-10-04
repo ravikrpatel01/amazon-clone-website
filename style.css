@@ -12,13 +12,15 @@
     align-items: center;
     justify-content: space-evenly;
 }
-
+.hero-msg a{
+    text-decoration: none;
+}
 .nav-logo{
     height: 50px;
     width: 100px;
 }
 .logo{
-    background-image: url("Web Images/amazon_logo.png");
+    background-image: url("Images/amazon_logo.png");
     height: 50px;
     width: 100%;
     background-size: cover;
@@ -60,6 +62,7 @@
 
 .nav-search:hover{
     border: 2px solid orange; 
+    border-radius: 6px;
 }
 .glass-image{
     height: 18px;
@@ -145,12 +148,11 @@ span{
     font-size: 0.9rem;
     cursor: pointer;
     font-weight: 700;
-    /* margin-left: 800px; */
 }
 .hero-section{
     height: 350px;
     width: 100%;
-    background-image: url("Web Images/hero_image.jpg");
+    background-image: url("Images/Main_Image.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -171,6 +173,7 @@ span{
 .hero-msg a{
     color: #007185;
 }
+
 .shop-section{
     display: flex;
     flex-wrap: wrap;
@@ -195,14 +198,13 @@ span{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.box-content p{
-    color: #007185;
-    cursor: pointer;
-}
+
 .box-content a{
     color: #007185;
-    /* cursor: pointer; */
     text-decoration: none;
+}
+.box-content a:hover{
+    color:chocolate;
 }
 
 .contact-details{
@@ -255,7 +257,7 @@ ul a{
 }
 
 .logo1{
-    background-image: url("Web Images/amazon_logo.png");
+    background-image: url("Images/amazon_logo.png");
     height: 50px;
     width: 100px;
     background-size: cover;
@@ -274,4 +276,51 @@ ul a{
 }
 .copy-right{
     padding-top: 5px;   
+}
+.box-content-sign-in{
+    height: 50px;
+    margin-bottom: 20px;
+}
+.box-img-sign-in{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    margin-left: 28px;
+    margin-top: 43px;
+}
+.box-img-sign-in img{
+    margin-bottom: 12px;
+}
+.box-img-sign-in a{
+    text-decoration: none;
+    color: #007185;
+}
+
+.box-img-sign-in a:hover{
+    color: chocolate;
+}
+.sign-h2{
+    margin-left: 20px;
+}
+.box-button{
+    width: 300px;
+    height: 27px;
+    background-color: #e6b800;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.language-option{
+    color: none;
+}
+.down-arrow{
+    width: 22px;
+    height: 20px;
+    margin-left: 5px;
+}
+.text-img{
+    display: flex;
 }

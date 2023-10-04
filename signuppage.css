@@ -4,69 +4,85 @@ html{
     height: 100%;
 }
 body{
-    background-image: url("Web Images/guitar-2886886.jpg");
+    background-image: url("Images/guitar-2886886.jpg");
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.box-container{
+.sign-up{
     display: flex;
+}
+.box-container{
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
-    width:500px;
-    height: 600px;
-    margin: 100px;
-    margin-top: 60px; 
+    width:550px;
+    height: 630px;
+    margin-left: 40px;
+    margin-top: 32px; 
     color:black;
     border-radius: 5px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-    
+    /* opacity: 0.99; */
 }
 
 .box-container h2{
     color: white;
-    font-size: 30px;
+    font-size: 31px;
     font-weight: bold;
     text-align: center;
     height: 50px;
     margin-top: 0;
-    padding: 10px;
-    width: 96%;
-    background-color: black;
+    padding-top: 20px;
+    width: 98%;
+    background-color: #FFE162;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+    /* opacity: 0.95; */
 }
 
-.box-container label{
-   padding-bottom: 110px;
-   margin-bottom: 50px; 
-   font-size: 19px;
+.name, .email, .mbno, .pass, .cf-pass, .gender, .country{
+   padding-bottom: 10px;
+   margin-bottom: 0px; 
+   margin-left: 40px;
+   font-size: 18px;
 }
 
-#firstname,#lastname,#email,#password,#mobile{
-    width: 94.5%;
+.male, .female,.others{
+    margin-left: 0px;
+}
+#name,#email,#password,#confirm-password,#mobile{
+    width: 80%;
     border-radius: 5px;
     font-size: 16px;
+    margin-top: 4px;
     margin-bottom: 10px;
+    margin-left: 40px;
     padding-left: 10px;
     padding-bottom: 5px;
     padding-top: 5px;
     border: black 1px solid;
+    background-color: #F6F5F5;
 }
 
 .box-container button{
     color: white;
     font-size: 17px;
-    width: 100%;
+    margin-left: 40px;
+    width: 82.5%;
     height: 35px;
     border: none;
     border-radius: 5px;
-    background-color: grey;
+    background-color: #1B9C85;
     cursor: pointer;
 }
 
+p3{
+    margin-left: 40px;
+}
 .box-container button:hover{
-    background-color: #3399ff;
+    background-color: #336AEA;
 }
 
 .box-container p{
@@ -85,4 +101,42 @@ body{
     font-size: 14px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    color: #1B9C85;
+    font-weight: bold;
+}
+
+.link:hover{
+    color: crimson;
+    font-weight: bold;
+}
+
+.text-sign-up{
+    margin-top: 150px;
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 65px;
+}
+span{
+    color: #FF6AC2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+}
+.basic-details{
+    color: #01D28E;
+    font-family: cursive;
+    font-size: 40px;
+}
+p1{
+    color: aliceblue;
+    text-shadow: #090e12;
+    font-size: 55px;
+    user-select: none;
+}
+p2{
+    font-size: 40px;
+    font-weight: 800;
+    user-select: none;
+}
+p{
+    user-select: none;
 }

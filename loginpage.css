@@ -5,14 +5,14 @@
 }
 
 html,body{
-    background-image: url("Web Images/backgroundimage.jpg");
+    background-image: url("Images/backgroundimage.jpg");
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.heading{
+.heading-text{
     padding-top: 90px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     font-size: 60px;
     font-weight: bold;
     font-size: 35px;
@@ -25,19 +25,12 @@ html,body{
     flex-direction: column;
     width: 450px;
     height: 350px;
+    /* margin-top: 0px; */
     margin-left: 100px;
     border: none;
     border-radius: 8px;
     background-color: white;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-.login-container h2{
-    color: #0c123c;
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .userimage{
@@ -65,6 +58,7 @@ html,body{
     justify-content: center;
     border-radius: 5px;
     border-width: 1px;
+    background-color: #F6F5F5;
 }
 
 .login-container label{
@@ -107,6 +101,8 @@ p{
     font-size: 14px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    color: #1B9C85;
+    font-weight: bold;
 }
 
 .login-container p2{
@@ -116,7 +112,7 @@ p{
     color: rgb(13, 9, 49);
 }
 
-.newuser{
+.new-user{
     margin-left: 21px;
     font-size: 14px;
 }
@@ -129,4 +125,23 @@ p{
 
 .checkbox{
     margin-left: 20px;
+}
+.heading{
+    border-bottom: #001a4d;
+    width: 98%;
+    height: 55px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: #03C4A1;
+}
+.heading h2{
+    font-size: 28px;
+    color: #132743;
+    text-align: center;
+    margin-left: auto;
+    margin-top: 10px;
+    font-weight: bold;
+    user-select: none;
+    font-family: 'Times New Roman', Times, serif;   
 }

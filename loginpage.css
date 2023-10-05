@@ -120,9 +120,13 @@ p{
 .forgotpassword{
     font-size: 14px;
     text-decoration: none;
-    margin-left: 155px;
+    margin-left: 152px;
+    color: #1B9C85;
+    font-weight: bold;
 }
-
+.forgotpassword:hover{
+    color: #001a4d;
+}
 .checkbox{
     margin-left: 20px;
 }

@@ -104,6 +104,9 @@ p{
     color: #1B9C85;
     font-weight: bold;
 }
+.signup:hover{
+    color: #001a4d;
+}
 
 .login-container p2{
     text-align: center;

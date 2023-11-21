@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="Images/icons8-access-16.png" type="image/x-icon">
+         <link rel="stylesheet" href="loginpage.css">
         <title>Login here to get access to your Account</title>
     </head>
     <body>
@@ -13,7 +14,7 @@
                 <h2>Login Form</h2>
             </div>
             <div class="form-input">
-                <form action="">
+                <form id="loginForm" onsubmit="validateForm()">
                     <img src="Images/user-solid.svg" alt="" class="userimage">
                     <label for="username">Username:</label>
                     <input type="text" id="username"><br>
@@ -21,14 +22,36 @@
                     <label for="password">Password:</label>
                     <input type="password" id="password"><br>
                     <input type="checkbox" class="checkbox" value="Remember me">
-                    <p2 class="rememberme">Remember me</p2><br><br>
-                    <button type="button">LOGIN</button><br>
+                    <p2 id="rememberMe">Remember me</p2><br><br>
+                    <input type="submit" value="Submit" class="submit-button">
                     <p3 class="new-user">New User?</p3>
-                    <a href="signuppage.html" class="signup" target="_parent">Sign Up</a>
-                    <a href="forgotpassword.html" class="forgotpassword" target="_parent">Forgot Password?</a>
+                    <a href="#" class="signup" target="_blank">Sign Up</a>
+                    <a href="#" class="forgotpassword" target="_blank">Forgot Password?</a>
                 </form>
             </div>  
         </div>
-        <link rel="stylesheet" href="loginpage.css">
+       <script>
+            function validateForm() {
+              var username = document.getElementById("username").value;
+              var password = document.getElementById("password").value;
+              var rememberMe = document.getElementById("rememberMe").checked;
+            
+              if (username == "") {
+                alert("Username must be filled out");
+                return false;
+              }
+            
+              if (password == "") {
+                alert("Password must be filled out");
+                return false;
+              }
+            
+              if (rememberMe) {
+                console.log("Remember password is checked");
+              }
+            
+              alert("Login successful!");
+            }
+            </script>
     </body>
 </html>

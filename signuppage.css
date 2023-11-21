@@ -12,7 +12,6 @@ body{
     display: flex;
 }
 .box-container{
-    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -24,7 +23,6 @@ body{
     color:black;
     border-radius: 5px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-    /* opacity: 0.99; */
 }
 
 .box-container h2{
@@ -39,7 +37,6 @@ body{
     background-color: #FFE162;
     user-select: none;
     font-family: Arial, Helvetica, sans-serif;
-    /* opacity: 0.95; */
 }
 
 .name, .email, .mbno, .pass, .cf-pass, .gender, .country{
@@ -52,7 +49,7 @@ body{
 .male, .female,.others{
     margin-left: 0px;
 }
-#name,#email,#password,#confirm-password,#mobile{
+#name,#email,#password,#confirmPassword,#mobile{
     width: 80%;
     border-radius: 5px;
     font-size: 16px;
@@ -66,7 +63,7 @@ body{
     background-color: #F6F5F5;
 }
 
-.box-container button{
+.box-container .submit-button{
     color: white;
     font-size: 17px;
     margin-left: 40px;
@@ -76,6 +73,7 @@ body{
     border-radius: 5px;
     background-color: #1B9C85;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 p3{

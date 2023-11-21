@@ -11,38 +11,34 @@
         <div class="sign-up">
             <div class="box-container">
                 <h2>Sign Up Here!</h2>
-                <form action="">
+                <form id="userForm" action="">
                     <label for="name" class="name">Name:</label>
-                    <input type="text" id="name" required placeholder="Ravi Kumar Patel"><br>
+                    <input type="text" name="name" id="name" required placeholder="Ravi Kumar Patel"><br>
                     <label for="email" class="email">Email:</label><br>
-                    <input type="email" id="email" required placeholder="example@gmail.com"><br>
+                    <input type="email" name="email" id="email" required placeholder="example@gmail.com"><br>
                     <label for="mobile" class="mbno">Mobile No:</label>
-                    <input type="number" id="mobile" required><br>
+                    <input type="number" name="mobile" id="mobile" required placeholder="+91-8340XXXX27"><br>
                     <label for="password" class="pass">Password:</label><br>
-                    <input type="password" id="password" required> <br>
+                    <input type="password" name="password" id="password" required> <br>
                     <label for="confirm-password" class="cf-pass"> Confirm Password:</label><br>
-                    <input type="password" id="confirm-password" required><br>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required><br>
                     <label for="gender" class="gender">Gender:</label>
-                    <input type="radio" id="male" name="gender" value="Male">
-                    <label for="male" class="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="Female">
-                    <label for="female" class="female">Female</label>
-                    <input type="radio" id="others" name="gender" value="others">
-                    <label for="others" class="others">Others</label><br><br>
+                    <input type="radio" id="genderMale" name="gender" value="male">Male
+                    <input type="radio" id="genderFemale" name="gender" value="female">Female <br><br>
                     <label for="country" class="country">Country:</label>
-                    <select name="country" id="countries">
+                    <select name="country" id="country">
                         <option value="select">Select</option>
                         <option value="india">India</option>
                         <option value="nepal">Nepal</option>
-                        <option value="america">America</option>
-                        <option value="london">London</option>
-                        <option value="westindies">West Indies</option>
-                        <option value="others1">Others</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="canada">Canada</option>
+                        <option value="others">Others</option>
                     </select>
                     <br><br>
-                    <button type="button">SUBMIT</button><br><br>
+                    <input type="button" class="submit-button" value="SUBMIT" onclick="submitForm()">
                     <p3>Already have an account?</p3>
-                    <a href="loginpage.html" class="link" target="_blank">Login</a>
+                    <a href="#" class="link" target="_blank">Login</a>
     
                     <p>RS-01: Made with Love💛</p>
                 </form>
@@ -52,6 +48,36 @@
                 <p2> by filling the <span class="basic-details">Basic Details!</span></p2>
             </div>
         </div>
+         <script>
+            function submitForm() {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const mobile = document.getElementById('mobile').value;
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                const gender = document.getElementById('genderMale').checked ? "male" : "female";
+                const country = document.getElementById('country').value;
+        
+                if (password !== confirmPassword) {
+                    alert('Password and Confirm Password do not match');
+                    return;
+                }
+                
+                const maskedPassword = '*'.repeat(password.length);
+                const userDetails = `Name: ${name}, Email: ${email}, Mobile: ${mobile}, Password: ${maskedPassword}, Gender: ${gender}, Country: ${country}\n`;
+
+                const blob = new Blob([userDetails], { type: "text/plain" });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement("a");
+
+                a.href = url;
+                a.download = "userDetails.txt";
+                a.click();
+
+                alert('Data has been saved successfully!');
+                document.getElementById("userForm").reset();    
+            }
+          </script>  
         
     </body>
 </html>
